@@ -5,8 +5,8 @@
 }
 body{
   min-height: 100vh;
-  background: url(titan.jpg);
-  object-fit: cover;
+  background: url(titan.jpg) no-repeat center center/cover;
+  
 }
 .navbar{
   display: flex;
@@ -76,7 +76,7 @@ body{
   background: #fff;
   transition: all 0.3s ease-in-out
 }
-@media screen and (max-width: 880px) {
+@media (max-width: 880px) {
   .navbar{
     backdrop-filter: none;
   }
@@ -102,6 +102,7 @@ body{
     z-index: 999;
 
   }
+ 
   .navbar-toggle.active .bar:nth-child(2){
     opacity: 0;
   }
@@ -123,4 +124,5 @@ body{
     font-size: 1.2rem;
     padding: 3px 15px;
   }
+   
 }
